@@ -1,0 +1,18 @@
+.content-container {
+    padding: 20px;
+    background-color: red;
+}
+.top-menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    .top-menu {
+        flex-direction: column;
+    }
+}
