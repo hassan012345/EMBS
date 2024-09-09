@@ -1,11 +1,12 @@
 import React from 'react';
-import ContentContainer from './ContentContainer';
 
 const OurEvents = () => {
   return (
-    <ContentContainer>
-      OurEvents
-    </ContentContainer>
+    <div>
+      <h1>Our Events</h1>
+      <p>Here are our events</p>
+    </div>
+    
   );
 }
 
