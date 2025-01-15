@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import eventRouter from './routes/eventRouter.js';
 import userRouter from './routes/userRouter.js';
+import memberRouter from './routes/memberRouter.js';
 import connection from './connection/db.js';
 
 
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 });
 app.use('/api/user', userRouter);
 app.use('/api/event', eventRouter);
+app.use('/member', memberRouter);
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);

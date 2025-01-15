@@ -1,6 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import './Sidebar.css';
+import {
+  Box
+} from '@mui/material';
+
 const Sidebar = () => {
 
   const mainNavigation = [
@@ -50,6 +54,9 @@ const Sidebar = () => {
         <li><Link to='/our-events'>Events</Link></li>
         <li><Link to='/contact-embs'>Contact Us</Link></li> */}
       </ul>
+      <Box element='main' sx={{p:3}}> 
+        <Outlet/>
+      </Box>
     </div>
   )
 }

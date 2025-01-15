@@ -9,22 +9,20 @@ import ContactEMBS from './Components/ContactEMBS';
 import SignUp from './Pages/SignUp';
 import SignIn from './Pages/SignIn';
 import HomePage from './Pages/Homepage';
-// import Home from './Pages/Home'
+import Home from './Pages/Home';
 function App() {
   return (
     <div className="App">
       <Router>
-        <Sidebar /> {/* Add Sidebar component here */}          
+        <Sidebar />
         <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/Sign-up" element={<SignUp/>} />
-          <Route path="/Sign-in" element={<SignIn/>} />
-
+          <Route path="/" element={<HomePage />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
           <Route path="/about-embs" element={<AboutEMBS />} />
           <Route path="/our-hierarchy" element={<OurHierarchy />} />
           <Route path="/our-events" element={<Events />} />
           <Route path="/contact-embs" element={<ContactEMBS />} />
-          
         </Routes>
       </Router>
     </div>
