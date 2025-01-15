@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const eventSchema = new mongoose.schema({
+const eventSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -11,7 +11,10 @@ const eventSchema = new mongoose.schema({
         type: Date,
         required: true
     },
-    sponsors:[
-        
-    ]
+    sponsors:[{
+        type: String
+    }]
 })
+
+const Event = mongoose.model('Event', eventSchema);
+export default Event;
