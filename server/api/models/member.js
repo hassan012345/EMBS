@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const memberSchema = new mongoose.schema({
+const memberSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -21,6 +21,10 @@ const memberSchema = new mongoose.schema({
     },
     description: {
         type: String,
+    },
+    memberType: {
+        type: String,
+        enum: ['general,alumni']
     },
     followMe: {
         type: Boolean,
