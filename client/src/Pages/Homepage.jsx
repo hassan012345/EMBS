@@ -1,49 +1,39 @@
 import React from 'react';
-import Sidebar from '../Components/Sidebar';
-import SocietyHierarchy from '../Components/OurHierarchy';
 import Header from '../Components/Header';
+import OurEvents from './OurEvents';
+import CoreBodyCard from '../Components/CoreBodyCard';
+import Footer from '../Components/Footer';
+import Hero from '../Assets/Images/Hero.webp';
+import { Outlet } from 'react-router-dom';
+import {
+    Box
+} from '@mui/material';
 
-const societyData = {
-    id: 1,
-    name: 'Student Council',
-    children: [
-      {
-        id: 2,
-        name: 'President',
-        children: []
-      },
-      {
-        id: 3,
-        name: 'Vice President',
-        children: [
-          {
-            id: 4,
-            name: 'Secretary',
-            children: []
-          },
-          {
-            id: 5,
-            name: 'Treasurer',
-            children: []
-          }
-        ]
-      },
-      {
-        id: 6,
-        name: 'Public Relations',
-        children: []
-      }
-    ]
-  };
+function HeroSection() {
+    return (
+        <Box>
+            Header
+        </Box>
+    )
+}
 
 const Homepage = () => {
-    <div>
-        <Header />
-        <Sidebar />
-        
-        {/* <SocietyHierarchy data={societyData} /> */}
 
-    </div>
+    return (
+        <div>
+            <Header />
+            <Box sx={{
+                padding: {
+                    xs: '0.5rem',
+                    sm: '1rem',
+                    md: '2rem',
+                }
+            }}>
+                <Outlet />
+            </Box>
+            <Footer />
+        </div>
+    )
 }
 
 export default Homepage;
