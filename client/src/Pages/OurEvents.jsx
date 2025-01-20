@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import EventsCard from '../Components/EventsCard';
-import Hero1 from '../Assets/Images/Hero1.webp';
+import Hero1 from '../Assets/Images/Hero/Hero1.jpg';
 
 const OurEvents = () => {
   const events = [
