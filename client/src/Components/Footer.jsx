@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -123,7 +123,7 @@ export default function Footer() {
         }}
       >
         <div>
-          <Link color="text.secondary" variant="body2" href="#">
+          {/* <Link color="text.secondary" variant="body2" href="#">
             Privacy Policy
           </Link>
           <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
@@ -132,7 +132,10 @@ export default function Footer() {
           <Link color="text.secondary" variant="body2" href="#">
             Terms of Service
           </Link>
-          <Copyright />
+          <Copyright /> */}
+          <Typography variant="body2" sx={{ mt: 1 }}>
+            Made with ❤️ by Hassaan Siddique
+          </Typography>
         </div>
         <Stack
           direction="row"

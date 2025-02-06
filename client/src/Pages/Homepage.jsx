@@ -8,20 +8,15 @@ import {
     Box
 } from '@mui/material';
 
-function HeroSection() {
-    return (
-        <Box>
-            Header
-        </Box>
-    )
-}
 
 const Homepage = () => {
 
     return (
         <div>
             <Header />
-            <Outlet />
+            <Box sx={{}}>
+                <Outlet />
+            </Box>
             <Footer />
         </div>
     )

@@ -16,6 +16,8 @@ import SponsorDetails from './Pages/SponsorDetails';
 import Initiatives from './Pages/Initiatives';
 import HomePageIndex from './Pages/HomePageIndex';
 import Collaborate from './Pages/Collaborate';
+import Dashboard from './Dashboard';
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,7 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="*" element={<NotFound />} />
           </Route>
+          <Route path="/dashboard/*" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
